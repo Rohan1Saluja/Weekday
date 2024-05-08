@@ -1,0 +1,92 @@
+@import "../../styles/colors";
+
+.post-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  padding: 1rem;
+
+  .item {
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5px 1px 1px rgb(0 0 0 / 10%);
+    height: 33rem;
+    transition: transform 0.5s ease;
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    .header-text {
+      box-shadow: 0 0.5px 3px 1px rgb(0 0 0 / 10%);
+      max-width: fit-content;
+      padding: 0.1rem 0.5rem;
+      border-radius: 5rem;
+    }
+    .company-info {
+      display: flex;
+      padding-top: 2rem;
+      gap: 0.5rem;
+      img {
+        height: 2.8rem;
+        width: 2.2rem;
+        border-radius: 0.2rem;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        .company-name:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+    .salary {
+      padding: 1rem 0;
+    }
+    .about {
+      max-height: 40%;
+      overflow: hidden;
+      position: relative;
+      ::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5rem; /* Adjust the height of the fade as needed */
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0),
+          rgba(255, 255, 255, 0.7)
+        );
+      }
+    }
+    .view-job {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      bottom: 1rem;
+      :hover {
+        cursor: pointer;
+      }
+    }
+    .action-buttons {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 1rem 0;
+      .apply-button {
+        background-color: $accent-color;
+        color: $text-color;
+        text-transform: none;
+      }
+      .referral-button {
+        background-color: $text-secondary-color;
+        color: $light-color;
+        text-transform: none;
+      }
+    }
+  }
+}

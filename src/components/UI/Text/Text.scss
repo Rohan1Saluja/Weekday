@@ -1,0 +1,83 @@
+@import "../../../styles/colors";
+@import "../../../styles/typography";
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+.text {
+  color: $text-color;
+  line-height: 1.3rem;
+  font-weight: $font-weight-regular;
+}
+
+.secondary-color {
+  color: $text-secondary-color;
+}
+
+.third-color {
+  color: $text-third-color;
+}
+
+.fourth-color {
+  color: $text-fourth-color;
+}
+
+.heading {
+  font-size: 2rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: $font-weight-bold;
+  line-height: 2rem;
+}
+
+.sub-heading {
+  font-size: 1.2rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: $font-weight-bold;
+  line-height: 1.5rem;
+}
+
+.description-small {
+  font-size: 0.8rem;
+}
+
+.description-mid {
+  font-size: 0.9rem;
+}
+
+.description {
+  font-size: 1rem;
+}
+
+.bold {
+  font-family: "Lexend", sans-serif;
+  font-weight: $font-weight-bold;
+}
+
+.semi-bold {
+  font-family: "Lexend", sans-serif;
+  font-weight: $font-weight-semibold;
+}
+
+.accent {
+  color: $accent-color;
+}
+
+.description-bold {
+  font-size: 1rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: $font-weight-bold;
+}
+
+.light-text {
+  color: rgb(99, 99, 99);
+  font-family: "Lexend", sans-serif;
+  font-weight: $font-weight-light;
+  font-size: 0.8rem;
+}
+
+.text.underlined {
+  text-decoration-line: underline;
+  color: $accent-color;
+}
+
+.error {
+  color: #d03b3a;
+}
