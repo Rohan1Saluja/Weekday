@@ -1,0 +1,18 @@
+.default {
+  text-decoration: none;
+}
+.default.small {
+  width: 100px;
+}
+
+.default.medium {
+  width: 150px;
+}
+.default.large {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.default.footer-button {
+  margin-right: 20px;
+}

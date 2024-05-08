@@ -1,0 +1,13 @@
+$header-height: 10%;
+$footer-height: 10%;
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .header {
+    min-height: $header-height;
+  }
+  .main-container {
+    height: calc(100% - $header-height - $footer-height);
+  }
+}

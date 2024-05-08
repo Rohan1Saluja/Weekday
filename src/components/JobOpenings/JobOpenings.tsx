@@ -4,6 +4,7 @@ import "./JobOpenings.scss";
 import { getJobPostings } from "../../utils/api";
 import { JobModel } from "../../types/jobs/jobs.model";
 import { Button } from "../UI/Button";
+// import { Button } from "../UI/Button";
 
 export const JobOpenings: React.FC = () => {
   const [jobs, setJobs] = React.useState({} as JobModel);
