@@ -2,19 +2,21 @@ import "./JobFilters.scss";
 // import { TextInput } from "../UI/TextInput";
 import { GetExperienceLevels, GetRoles } from "../constants";
 import { TextInput } from "../UI/TextInput";
+import { MultiSelect } from "../UI/MultiSelect";
 
 export const JobFilters: React.FC = () => {
   const roles = GetRoles();
   const experience = GetExperienceLevels();
   return (
     <div className="filters">
-      <TextInput
+      {/* <TextInput
         width="small"
         placeholder="Roles"
         size="small"
         nestedOptions
         dropdownOptions={roles}
-      />
+      /> */}
+      <MultiSelect options={roles} />
       <TextInput width="small" placeholder="Number Of Employees" size="small" />
       <TextInput
         width="small"

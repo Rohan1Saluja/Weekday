@@ -37,12 +37,6 @@ export const TextInput: React.FC<Props> = React.forwardRef(
     },
     ref
   ) => {
-    console.log("NEsted Options: ", nestedOptions);
-    dropdownOptions?.length &&
-      dropdownOptions?.map((option: any, index: number) =>
-        console.log("Option: ", option)
-      );
-
     console.log("DropDown Options: ", dropdownOptions);
     const [open, setOpen] = React.useState(false); // State for dropdown visibility
 
