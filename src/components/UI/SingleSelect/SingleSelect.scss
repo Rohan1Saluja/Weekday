@@ -1,0 +1,26 @@
+.single-select.language-select {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  height: 50px;
+  z-index: 1;
+  .MuiInputBase-root {
+    border: 1px solid #474747;
+    color: #939393;
+    .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon,
+    .css-bpeome-MuiSvgIcon-root-MuiSelect-icon {
+      color: #474747;
+    }
+  }
+}
+
+.single-select.small {
+  width: 10rem;
+}
+
+.MuiFormControl-root {
+  width: 100%;
+  .MuiSelect-select {
+    padding: 10px;
+  }
+}

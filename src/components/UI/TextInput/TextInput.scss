@@ -1,13 +1,21 @@
 @import "../../../styles/colors";
+@import "../../../styles/typography";
 
 .text-input {
   position: relative;
+  background-color: $light-color;
   .MuiFormControl-root {
     width: 100%;
   }
   input {
     padding: 10px;
+  }
+  .contains-label {
     height: 1rem;
+    width: 90%;
+    input {
+      padding: 0.8rem !important;
+    }
   }
 }
 
@@ -15,6 +23,14 @@
   width: 12rem;
 }
 
+.text-input.medium {
+  width: 16rem;
+}
+
 .text-input.large {
-  width: 15rem;
+  width: 22rem;
+}
+
+.blur {
+  opacity: 0.4;
 }

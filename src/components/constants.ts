@@ -97,3 +97,29 @@ export const GetExperienceLevels = () => {
   const experience = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
   return experience;
 };
+
+export const GetNumberOfEmployees = () => {
+  const employees = {
+    emps: {
+      values: [
+        "1-10",
+        "11-20",
+        "21-50",
+        "51-100",
+        "101-200",
+        "201-500",
+        "500+",
+      ],
+    },
+  };
+  return employees;
+};
+
+export const GetWorkPreference = () => {
+  const workPreference = {
+    prefs: {
+      values: ["Remote", "Hybrid", "In-office"],
+    },
+  };
+  return workPreference;
+};
